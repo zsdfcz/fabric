@@ -1,0 +1,6 @@
+basic-network/bin
+basic-network/channel-artifacts
+basic-network/system-genesis-block
+
+basic-network/organizations/ordererOrganizations
+basic-network/organizations/peerOrganizations
