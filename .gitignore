@@ -1,4 +1,5 @@
 basic-network/bin
+basic-network/script/*
 basic-network/channel-artifacts
 basic-network/system-genesis-block
 
@@ -9,3 +10,9 @@ basic-network/organizations/fabric-ca
 
 application/node_modules
 application/wallet
+application/package-lock.json
+application/connection-org1.json
+
+chaincode/abstore
+chaincode/basic
+
