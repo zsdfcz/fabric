@@ -4,3 +4,8 @@ basic-network/system-genesis-block
 
 basic-network/organizations/ordererOrganizations
 basic-network/organizations/peerOrganizations
+
+basic-network/organizations/fabric-ca
+
+application/node_modules
+application/wallet
