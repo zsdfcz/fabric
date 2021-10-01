@@ -56,12 +56,14 @@ function runExplorer() {
 }
 
 
-if [ "$1" == "generate" ]; then
- generateCAcert org1peer0 orderer
+if [ "$1" == "generateCert" ]; then
+ generateCert
 elif [ "$1" == "createConfigtxgen" ]; then
  createConfigtxgen
 elif [ "$1" == "createChannel" ]; then
  joinChannel createChannel
+elif [ "$1" == "upNetwork" ]; then
+ upNetwork $2 $3
 elif [ "$1" == "joinChannel" ]; then
  joinChannel joinChannel
 elif [ "$1" == "updateAnchor" ]; then
