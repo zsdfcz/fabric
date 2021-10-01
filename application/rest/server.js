@@ -8,17 +8,17 @@ const HOST = '0.0.0.0';
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 
-app.post('/init', function (req, res) {
-   let a = req.body.a;
-   let aval = req.body.aval;
-   let b = req.body.b;
-   let bval = req.body.bval;
+app.get('/init', function (req, res) {
+   let a = req.query.a;
+   let aval = req.query.aval;
+   let b = req.query.b;
+   let bval = req.query.bval;
    let args = [a, aval, b, bval];
    sdk.send(false, 'Init', args, res);
 });
 
-app.post('/query', function (req, res) {
-   let a = req.body.a;
+app.get('/query', function (req, res) {
+   let a = req.query.a;
    let args = [a];
    sdk.send(true, 'Query', args, res);
 });
