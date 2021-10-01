@@ -50,6 +50,12 @@ function upgradeCC() {
  docker exec cli scripts/upgradeCC.sh $1 $2
 }
 
+function runExplorer() {
+ # 하이퍼레저 익스플로러 실행
+ basic-network/scripts/runExplorer.sh
+}
+
+
 if [ "$1" == "generate" ]; then
  generateCAcert org1peer0 orderer
 elif [ "$1" == "createConfigtxgen" ]; then
@@ -70,6 +76,8 @@ elif [ "$1" == "startSDK" ]; then
  startSDK
 elif [ "$1" == "upgradeCC" ]; then
  upgradeCC $2 $3
+elif [ "$1" == "runExplorer" ]; then
+ runExplorer
 elif [ "$1" == "clean" ]; then
  cleanNetwork
 elif [ "$1" == "start" ]; then
