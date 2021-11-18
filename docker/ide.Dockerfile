@@ -1,4 +1,4 @@
-FROM banjang/fabric-env:2.2.base0
+FROM banjang/fabric-env:2.2.base1
 
 # ==================================================================
 # DinD Docker and Docker Compose
